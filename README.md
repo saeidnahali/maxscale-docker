@@ -44,7 +44,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 MariaDB [(none)]> show databases;
 
 -
-## Pyhton
+## Python
 
 Script will query both tables in the databaseIt will output the following information:
 1.The last 10 rows of zipcodes_one
