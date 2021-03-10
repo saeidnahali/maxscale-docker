@@ -1,8 +1,7 @@
 # Real World Project: Database Shard
 
 This project is done on lubuntu 18.04
-
--	
+	
 ## Requirements:
 
 Linux os: Install clone 
@@ -18,26 +17,20 @@ Sql Query: Shard1.sql , Shard2.sql
 sudo apt-get update
 sudo apt install git
 sudo git clone https://github.com/Zohan/maxscale-docker.git
+
 cd maxscale-docker/maxscale/
 sudo nano maxscale.cnf (Edited)
 sudo nano docker-compose.yml (Edited)
 cd maxscale.cnf.d/
 sudo nano examples.cnf (Edited)
 cd ..
+
 sudo systemctl status docker
 sudo apt install docker-compose
 sudo apt install maridb-client
 sudo docker-compose up -d #(To bring the containers up)
+
 docker-compose exec maxscale maxctrl list servers #(Check server status)
-
-┌────────────────┬─────────┬──────┬─────────────┬─────────────────┬───────────┐
-│ Server         │ Address │ Port │ Connections │ State           │ GTID      │
-├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
-│ zip_master_one │ master  │ 3306 │ 0           │ Master, Running │ 0-3000-32 │
-├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
-│ zip_master_two │ master2 │ 3306 │ 0           │ Running         │ 0-3000-31 │
-└────────────────┴─────────┴──────┴─────────────┴─────────────────┴───────────┘
-
 mariadb -umaxuser -pmaxpwd -h 127.0.0.1 -P 4000 #(connect to mariadb)
 
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
@@ -49,16 +42,6 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 MariaDB [(none)]> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-| zipcodes_one       |
-| zipcodes_two       |
-+--------------------+
-
 
 -
 ## Pyhton
