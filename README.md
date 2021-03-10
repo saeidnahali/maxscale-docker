@@ -2,10 +2,10 @@
 
 This project is done on lubuntu 18.04
 	
-### Requirements:
+## Requirements:
 
 ---
-#####Linux os: 
+##### Linux os: 
 
 Install clone 
 
@@ -14,16 +14,16 @@ Install docker-compose
 Install mariadb-client
 
 
-#####Python  : 
+##### Python  : 
 
 Recommend is Pycharm
 
 
-#####Sql Query: Shard1.sql , Shard2.sql
+##### Sql Query: Shard1.sql , Shard2.sql
 
 
 
-### Linux Steps
+## Linux Steps
 
 sudo apt-get update
 
@@ -68,7 +68,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 MariaDB [(none)]> show databases;
 
 
-### Python
+## Python
 
 Script will query both tables in the databaseIt will output the following information:
 
@@ -90,7 +90,7 @@ docker-compose down -v
 
 
 
-### Sources:
+## Sources:
 
 https://rtc.instructure.com/courses/2054110/files/162256110?module_item_id=52154663
 
