@@ -86,6 +86,9 @@ docker-compose down -v
 ## Sources:
 
 https://rtc.instructure.com/courses/2054110/files/162256110?module_item_id=52154663
+
 https://github.com/Zohan/maxscale-docker
+
 https://mariadb.com/kb/en/mariadb-maxscale-25-simple-sharding-with-two-servers/
+
 Luma Naser
