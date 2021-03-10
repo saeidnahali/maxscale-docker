@@ -12,8 +12,8 @@ Linux os: Install clone
 Python  : Recommend is Pycharm
 
 Sql Query: Shard1.sql , Shard2.sql
-```
 
+-
 ## Linux Steps
 sudo apt-get update
 sudo apt install git
@@ -59,8 +59,8 @@ MariaDB [(none)]> show databases;
 | zipcodes_two       |
 +--------------------+
 
-```
 
+-
 ## Pyhton
 
 Script will query both tables in the databaseIt will output the following information:
@@ -69,13 +69,15 @@ Script will query both tables in the databaseIt will output the following inform
 3.The largest zipcodenumber in zipcodes_one
 4.The smallest zipcode_number in zipcodes_two
 
-```
 
+---
 Once complete, to remove the cluster and maxscale containers:
 
 ```
 docker-compose down -v
 ```
+
+-
 ## Sources:
 https://rtc.instructure.com/courses/2054110/files/162256110?module_item_id=52154663
 https://github.com/Zohan/maxscale-docker
