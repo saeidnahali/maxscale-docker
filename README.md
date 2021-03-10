@@ -3,13 +3,22 @@
 This project is done on lubuntu 18.04
 	
 ## Requirements:
+
 ---
-Linux os: Install clone 
-          Install docker-compose
-	  Install mariadb-client
----
-Python  : Recommend is Pycharm
----
+Linux os: 
+
+Install clone 
+
+Install docker-compose
+
+Install mariadb-client
+
+
+Python  : 
+
+Recommend is Pycharm
+
+
 Sql Query: Shard1.sql , Shard2.sql
 
 -
