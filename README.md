@@ -2,7 +2,7 @@
 
 This project is done on lubuntu 18.04
 	
-## Requirements:
+### Requirements:
 
 ---
 Linux os: 
@@ -21,9 +21,10 @@ Recommend is Pycharm
 
 Sql Query: Shard1.sql , Shard2.sql
 
--
-## Linux Steps
----
+
+
+### Linux Steps
+
 sudo apt-get update
 
 sudo apt install git
@@ -68,7 +69,7 @@ MariaDB [(none)]> show databases;
 
 -
 
-## Python
+### Python
 
 Script will query both tables in the databaseIt will output the following information:
 
@@ -85,14 +86,12 @@ Script will query both tables in the databaseIt will output the following inform
 
 Once complete, to remove the cluster and maxscale containers:
 
-```
+
 docker-compose down -v
 
-```
 
--
 
-## Sources:
+### Sources:
 
 https://rtc.instructure.com/courses/2054110/files/162256110?module_item_id=52154663
 
